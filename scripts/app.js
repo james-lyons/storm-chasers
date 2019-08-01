@@ -19,10 +19,10 @@ console.log('uwu')
 //     console.log(event.target)
 // });
 
-document.getElementsByClassName(".content-image").addEventListener('click', (event) => {
-    console.log(event.target);
-});
-
-// window.addEventListener('click', (event) => {
-//     changeVisibility(event);
+// document.getElementsByClassName(".content-image").addEventListener('click', (event) => {
+//     console.log(event.target);
 // });
+
+window.addEventListener('click', (event) => {
+    changeVisibility(event);
+});
