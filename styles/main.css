@@ -1,6 +1,7 @@
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    /* outline: 1px solid black; */
 }
 
 header {
@@ -9,19 +10,18 @@ header {
 
 h1 {
     color: white;
+    padding: 1rem;
 }
-
-/* form {
-} */
 
 .header-nav {
     color: white;
     display: flex;
+    padding: 1em;
 }
 
-/* ul {
+ul {
     margin: 0 auto;
-} */
+}
 
 li {
     display: inline-block;
@@ -34,13 +34,21 @@ li {
     height: 2em;
 }
 
-/* .footer-ul {
+footer {
+    margin: 10px;
+}
+
+.footer-ul {
     text-align: center;
-} */
+}
 
 .footer-li {
     height: 2em;
     outline: 1px solid black;
+}
+
+form {
+    margin: 1em;
 }
 
 section {
@@ -50,10 +58,13 @@ section {
 }
 
 div {
-    height: 30%;
+    display: flex;
+    max-height: 35%;
+    min-height: 25%;
     padding: 1em;
-    margin: 2em 0;
+    margin: 1em 0;
     outline: 1px solid black;
+    background-color: lightgrey;
 }
 
 p {
@@ -64,6 +75,14 @@ p {
     text-align: center;
     height: 2em;
     outline: 1px solid black;
+}
+
+img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .hidden {
