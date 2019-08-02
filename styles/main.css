@@ -4,23 +4,54 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: lightblue;
+header {
+    background: #000033 ;
 }
 
-header {
-    background: black;
+section {
+    height: auto;
+    /* height: 90vh; */
+    width: 90vw;
+    margin: 25px auto;
+}
+
+footer {
+    margin: 3em 0 0 0;
+}
+
+.footer-div {
+    background-image: url('../images/calamity-city-clouds-1162251.jpg');
+    background-size: cover;
+    min-height: 200px;
 }
 
 h1 {
     color: white;
-    padding: 1rem;
+    padding: 2rem 0 0 2rem;
 }
 
-.header-nav {
-    color: white;
-    display: flex;
-    padding: 1em;
+h2 {
+    text-align: center;
+}
+
+/* p {
+    text-align: center;
+    max-width: 50%;
+    margin: 1em auto;
+} */
+
+#header-div {
+    min-height: 8vh;
+}
+
+#menu-icon {
+    padding: 15px 0 0 15px;
+}
+
+#live-icon {
+    position: relative;
+    padding: 15px 0 0 0;
+    left: 90%;
 }
 
 ul {
@@ -34,12 +65,20 @@ li {
     padding: 0 20px;
 }
 
-.header-li {
-    height: 2em;
+a {
+    text-decoration: none;
+    background-color: none;
 }
 
-footer {
-    margin: 3em 0 0 0;
+.header-nav {
+    color: white;
+    display: flex;
+    padding: 0 0 1em 0;
+}
+
+.header-li {
+    height: 2em;
+    font-size: 2em;
 }
 
 .footer-ul {
@@ -47,58 +86,160 @@ footer {
 }
 
 .footer-li {
-    height: 2em;
-    outline: 1px solid black;
-    background-color: white;
+    padding: 11px 0 0 0;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 1em;
+    min-height: 55px;
+    min-width: 55px;
+}
+
+.footer-form {
+    text-align: center;
+    font-weight: 700;
+    font-size: 2rem;
+    color: white;
 }
 
 form {
-    margin: 1em;
+    margin: 1em auto;
+    padding: 3px 0;
+    max-width: 15em;
     background-color: white;
-}
-
-section {
-    height: 70vh;
-    width: 90vw;
-    margin: 25px auto;
-}
-
-div {
-    display: flex;
-    max-height: 33%;
-    min-height: 25%;
-    margin: 1em 0;
-    outline: 1px solid black;
-    background-color: lightgrey;
-}
-
-p {
-    text-align: center;
+    border-radius: 5px;
 }
 
 .newsletter-form {
     text-align: center;
     height: 2em;
-    outline: 1px solid black;
 }
 
-img {
-    flex-shrink: 0;
-    min-width: 100%;
-    min-height: 100%;
-    max-width: 100%;
-    max-height: 100%;
-    overflow: hidden;
+.article-images {
+    height: 30%;
+    width: 30%;
 }
 
 .hidden {
     display: none;
 }
 
-/* .visibile {
-
-} */
-
 .less-visible {
     opacity: 10%;
+}
+
+
+
+/*         RESPONSIVE FOR PHONES         */
+
+
+
+@media (max-width: 500px) {
+    section {
+        /* height: auto; */
+        height: 90vh;
+        width: auto;
+        max-width: 90vw;
+        margin: 25px auto;
+        overflow-y: scroll;
+    }
+
+    footer {
+        margin: 3em 0 0 0;
+    }
+
+    h1 {
+        color: white;
+        padding: 1rem;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+        max-width: 100%;
+    }
+
+    #menu-icon {
+        position: relative;
+        padding: auto 0;
+    }
+    
+    #live-icon {
+        position: relative;
+        left: 55%;
+    }
+
+    ul {
+        margin: 0 auto;
+    }
+
+    li {
+        display: inline-block;
+        flex-direction: row;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    a {
+        text-decoration: none;
+        background-color: none;
+    }
+
+    .header-nav {
+        color: white;
+        display: flex;
+        padding: 1em;
+    }
+
+    .header-li {
+        height: 2em;
+        font-size: 1em;
+    }
+
+    .footer-ul {
+        text-align: center;
+    }
+
+    .footer-li {
+        padding: 11px 0 0 0;
+        margin: 5px;
+        border: 1px solid black;
+        border-radius: 1em;
+        min-height: 55px;
+        min-width: 55px;
+    }
+
+    .footer-form {
+        text-align: left;
+        padding: 20px 0 0 20px;
+    }
+
+    form {
+        margin: 1em auto;
+        /* padding: 3px 0; */
+        max-width: 15em;
+        background-color: white;
+    }
+
+    .article-images {
+        display: inline-block;
+        height: 175px;
+        width: 175px;
+        border-radius: 5%;
+    }
+
+    img {
+        flex-shrink: 0;
+        overflow: hidden;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .less-visible {
+        opacity: 10%;
+    }
 }
